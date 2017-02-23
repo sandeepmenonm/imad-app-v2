@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 
 app.get('/pageone', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'P1.html'));
+  res.send('I am a disco dancer');
 });
 
 app.get('/ui/style.css', function (req, res) {
