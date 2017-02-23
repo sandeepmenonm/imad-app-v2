@@ -15,8 +15,13 @@
         </div>
         <script>
         var img=document.getElementById('madi');
+        var marginRight=0;
         img.onclick=function()
-        img.style.marginRight='75px';
+        {
+            marginRight=marginRight+10;
+            img.style.marginRight=marginRight+'px';
+            
+        }
         </script>
         
         <script type="text/javascript" src="/ui/main.js">
