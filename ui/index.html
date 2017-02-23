@@ -15,11 +15,14 @@
         </div>
         <script>
         var img=document.getElementById('madi');
-        var marginRight=0;
+        function moveright()
+        {
+             marginRight=marginRight+10;
+            img.style.marginRight=marginRight+'px';
+        }
         img.onclick=function()
         {
-            marginRight=marginRight+10;
-            img.style.marginRight=marginRight+'px';
+           var interval=setInterval(moveright, 100);
             
         }
         </script>
