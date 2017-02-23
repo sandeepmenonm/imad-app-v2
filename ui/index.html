@@ -13,7 +13,21 @@
             Hey I am Sandeep and my world is my family.True
          <h4> This is new </h4>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
+        
+        
+        <script>
+        var img=document.getElementById('madi');
+        function moveright()
+        {
+             marginRight=marginRight+10;
+            img.style.marginRight=marginRight+'px';
+        }
+        img.onclick=function()
+        {
+           var interval=setInterval(moveright, 100);
+            
+        }
+        
         </script>
     </body>
 </html>
